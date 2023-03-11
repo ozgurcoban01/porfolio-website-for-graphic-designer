@@ -1,4 +1,5 @@
 .contentDiv {
+  width: 100%;
 }
 
 .bgVideo {
@@ -21,28 +22,132 @@
   position: absolute;
 }
 .videoTextSvg {
-    height: 300px;
+  height: 300px;
   fill: transparent;
   stroke-width: 5px;
-  stroke: rgba(255, 255, 255, 0.1);
+  stroke: rgba(255, 255, 255, 0.3);
   stroke-dasharray: 2700;
   stroke-dashoffset: 2700;
   animation: animate-text 3s linear forwards;
 }
-@keyframes animate-text{
-    0%{
-        stroke-dasharray: 2700;
-        stroke-dashoffset: 2700;
-        fill: transparent;
-    }
-    80%{
-        stroke-dasharray: 800;
-        stroke-dashoffset: 800;
-        fill: transparent;
-    }
-    100%{
-        stroke-dasharray: 0;
-        stroke-dashoffset: 0;
-        fill: rgba(255, 255, 255, 0.6);
-    }
+@keyframes animate-text {
+  0% {
+    stroke-dasharray: 2700;
+    stroke-dashoffset: 2700;
+    fill: transparent;
+  }
+  80% {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    fill: transparent;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    fill: rgba(255, 255, 255, 0.6);
+  }
+}
+.layer1 {
+  text-align: center;
+  padding: 2% 30%;
+}
+.parallax1 {
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.layer2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  text-align: center;
+}
+.parallax2 {
+  width: 100%;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+.gif {
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gif svg {
+  fill: black;
+  height: 100px;
+  width: 100px;
+  transition: 0.3s;
+}
+.gif1:hover .svg1 {
+  fill: rgb(255, 145, 0);
+  stroke: black;
+}
+.gif2:hover .svg2 {
+  stroke: black;
+  fill: rgb(161, 0, 167);
+}
+.gif3:hover .svg3 {
+  stroke: black;
+  fill: rgb(76, 0, 255);
+}
+
+@media screen and (max-width: 480px) {
+  .contentDiv {
+    width: 500px;
+  }
+  .bgVideo {
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .videoTextSvg {
+    height: 200px;
+    fill: transparent;
+    stroke-width: 5px;
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-dasharray: 2700;
+    stroke-dashoffset: 2700;
+    animation: animate-text 3s linear forwards;
+  }
+  .layer1 {
+    text-align: center;
+    padding: 5% 10%;
+  }
+  .layer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .gif {
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+  }
 }
