@@ -1,8 +1,48 @@
-.contentDiv{
-
-
+.contentDiv {
 }
-.bgVideo{
 
-    width: 100%;
+.bgVideo {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgVideo > video {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.videoText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.videoTextSvg {
+    height: 300px;
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-dasharray: 2700;
+  stroke-dashoffset: 2700;
+  animation: animate-text 3s linear forwards;
+}
+@keyframes animate-text{
+    0%{
+        stroke-dasharray: 2700;
+        stroke-dashoffset: 2700;
+        fill: transparent;
+    }
+    80%{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        fill: transparent;
+    }
+    100%{
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+        fill: rgba(255, 255, 255, 0.6);
+    }
 }
