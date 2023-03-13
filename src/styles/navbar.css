@@ -1,3 +1,6 @@
+.linkDecoration{
+    text-decoration: none;    
+}
 .navDiv{
     position: fixed;
     width: 100%;
@@ -6,11 +9,12 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    transition: 0.5s;
+    transition: 0.3s;
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size:x-large;
     z-index: 99;
+    backdrop-filter: blur(5px);
 }
 .navLogo{
     width: 20%;
@@ -33,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-  
+    
 }
 
 
@@ -56,4 +60,14 @@
         font-family: 'Bebas Neue', cursive;
         font-size:x-large;
     }
+  }
+.crPointer{
+    color: rgba(255, 255, 255, 0.7);
+}
+  .crPointer:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .crPointer:active {
+color: white;
   }

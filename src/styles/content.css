@@ -151,3 +151,27 @@
     padding: 5%;
   }
 }
+.gif1::selection  {
+  background: rgb(255, 145, 0);
+ 
+}
+.gif2::selection {
+  background: rgb(161, 0, 167);
+}
+.gif3::selection {
+ 
+  background: rgb(76, 0, 255);
+  
+}
+.gif1 h1::selection  {
+  background: rgb(255, 145, 0);
+ 
+}
+.gif2 h1::selection {
+  background: rgb(161, 0, 167);
+}
+.gif3 h1::selection {
+ 
+  background: rgb(76, 0, 255);
+  
+}

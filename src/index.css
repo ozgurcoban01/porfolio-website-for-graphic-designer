@@ -2,6 +2,14 @@
 *{  max-width: 100vw;
     padding: 0;
     margin: 0;
-
+     
 }
 
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(109, 0, 0);
+}
+
+Link{
+    text-decoration: none;
+  }
