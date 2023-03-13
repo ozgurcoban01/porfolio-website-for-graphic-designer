@@ -1,10 +1,32 @@
 import React, { useEffect, useState } from "react";
-import "../styles/navbar.css";
+import "../styles/navbaronhome.css";
 import svgLogo from "../assets/svgLogo.svg";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const [navTheme, setNavTheme] = useState(false);
+const NavbarOnHome = () => {
+  const [navTheme, setNavTheme] = useState(true);
+
+  const [scroll, setScroll] = useState();
+
+  window.onscroll = () => {
+    setScroll(window.scrollY);
+  };
+
+  const navThemeFunc = () => {
+    if (scroll == 0) {
+      setNavTheme(true);
+    } else {
+      setNavTheme(false);
+    }
+  };
+
+  useEffect(() => {
+    navThemeFunc();
+  }, [scroll]);
+
+  useEffect(() => {
+    setNavTheme(true);
+  }, []);
 
   return (
     <div className={`navDiv ${navTheme ? "navScrollTop" : ""}`}>
@@ -42,4 +64,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarOnHome;

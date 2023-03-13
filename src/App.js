@@ -15,9 +15,9 @@ import Content from "./components/Content.js";
 function App() {
   return (
     <div className="App select">
-      <BrowserRouter><Navbar />
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Content />} />
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </BrowserRouter>
