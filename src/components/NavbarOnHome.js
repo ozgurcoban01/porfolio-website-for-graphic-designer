@@ -22,9 +22,11 @@ const NavbarOnHome = () => {
 
   useEffect(() => {
     navThemeFunc();
+    setScroll(window.scrollY);
   }, [scroll]);
 
   useEffect(() => {
+    setScroll(window.scrollY);
     setNavTheme(true);
   }, []);
 
@@ -48,15 +50,27 @@ const NavbarOnHome = () => {
         </svg>
       </div>
       <div className={`navTexts ${navTheme ? "navScrollText" : ""}`}>
-        <div className={`navTexts  navHk ${navTheme ? "navScrollHk" : ""} `}>
+        <div className={`navText  navHk ${navTheme ? "navScrollHk" : ""} `}>
           <Link to={`/`} className="linkDecoration">
             <span className="crPointer">Home</span>
           </Link>
         </div>
-        <div className={`navTexts  navPf ${navTheme ? "navScrollPf" : ""} `}>
+        <div className={`navText  navPf ${navTheme ? "navScrollPf" : ""} `}>
           <Link to={`/portfolio`} className="linkDecoration">
           
             <span className="crPointer">Portfolio</span>
+          </Link>
+        </div>
+        <div className={`navText  navPf ${navTheme ? "navScrollPf" : ""} `}>
+          <Link to={`/about`} className="linkDecoration">
+          
+            <span className="crPointer">About</span>
+          </Link>
+        </div>
+        <div className={`navText  navPf ${navTheme ? "navScrollPf" : ""} `}>
+          <Link to={`/contact`} className="linkDecoration">
+          
+            <span className="crPointer">Contact</span>
           </Link>
         </div>
       </div>
