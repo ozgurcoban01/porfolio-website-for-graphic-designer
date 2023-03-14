@@ -1,13 +1,81 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/portfolio.css";
 import Content from "./Content.js";
+import PortfolioContent from "./PortfolioContent.js";
 import Navbar from "./Navbar.js";
 
 const Portfolio = () => {
+ 
+  const popHupContents = [
+    {
+      intext: "1",
+      image: `https://source.unsplash.com/random/`,
+    },
+    {
+      intext: "2",
+      image: `https://source.unsplash.com/random/`,
+    },
+    {
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },{
+      intext: "3",
+      image: `https://source.unsplash.com/random/`,
+    },
+  ];
+
   return (
     <>
       <Navbar />
-      <div className="portfolioContainer">
+      <div className="portfolioContainer ">
         <div className="portfolioPageLayer1">
           <span className="line"></span>
           <div className="portfolioText">Portfolio</div>
@@ -15,45 +83,9 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolioContentContainer">
-          <div className="portfolioContent">
-            <img src="https://source.unsplash.com/random/"></img>
-            <div className="portfolioContentText">asdfasdf</div>
-          </div>
-          <div className="portfolioContent">
-            <img src="https://source.unsplash.com/random/"></img>
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>{" "}
-          <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>{" "}
-          <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>{" "}
-          <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>     <div className="portfolioContent">
-            <div className="portfolioContentText">asdfasdf</div>
-            <img src="https://source.unsplash.com/random/"></img>
-          </div>
+          {popHupContents.map((popHupContent) => (
+            <PortfolioContent data={popHupContent} />
+          ))}
         </div>
       </div>
     </>
