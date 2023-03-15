@@ -1,22 +1,28 @@
-import React, { useRef,useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import "../styles/content.css";
 import videoBg from "../assets/backgroundVideo.mp4";
 import VideoText from "../assets/videoText.svg";
 import { Parallax } from "react-parallax";
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Content = () => {
+  const degreeref = useRef(null);
 
-  const degreeref=useRef(null);
+  useEffect(() => {
+    const el = degreeref.current;
 
-  useEffect(()=>{
-    const el=degreeref.current
-
-    gsap.to(".degreeSpanInside",{scrollTrigger:{trigger:".degreeSpanInside",toggleActions:"restart none none none"},x:0,delay:0.1,ease:'none'});
-
-  },[])
+    gsap.to(".degreeSpanInside", {
+      scrollTrigger: {
+        trigger: ".degreeSpanInside",
+        toggleActions: "restart none none none",
+      },
+      x: 0,
+      duration:1.5,
+      ease: "ease-in-out",
+    });
+  }, []);
 
   return (
     <div className="contentDiv">
@@ -68,81 +74,80 @@ const Content = () => {
         <div className="gif gif1">
           <div className="gifSpan">Dil Seviyeleri</div>
           <div className="dildegrees">
-          <div className="gifContent">
-            Türkçe
-            <div className="degreeSpan">
-              <div className="degreeSpanInside turkceDegree"></div>
+            <div className="gifContent">
+              Türkçe
+              <div className="degreeSpan">
+                <div className="degreeSpanInside turkceDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            İngilizce
-            <div className="degreeSpan">
-              <div className="degreeSpanInside ingilizceDegree"></div>
+            <div className="gifContent">
+              İngilizce
+              <div className="degreeSpan">
+                <div className="degreeSpanInside ingilizceDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            Rusça
-            <div className="degreeSpan">
-              <div className="degreeSpanInside ruscaDegree"></div>
+            <div className="gifContent">
+              Rusça
+              <div className="degreeSpan">
+                <div className="degreeSpanInside ruscaDegree"></div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <div className="gif gif2">
           <div className="gifSpan">Yetenekler</div>
           <div className="degrees">
-          <div className="gifContent">
-            Photoshop
-            <div className="degreeSpan">
-              <div ref={degreeref} className="degreeSpanInside photoshopDegree"></div>
+            <div className="gifContent">
+              Photoshop
+              <div className="degreeSpan">
+                <div className="degreeSpanInside photoshopDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            Illustrator
-            <div className="degreeSpan">
-              <div className="degreeSpanInside illustratorDegree"></div>
+            <div className="gifContent">
+              Illustrator
+              <div className="degreeSpan">
+                <div className="degreeSpanInside illustratorDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            After Effects
-            <div className="degreeSpan">
-              <div className="degreeSpanInside afterDegree"></div>
+            <div className="gifContent">
+              After Effects
+              <div className="degreeSpan">
+                <div className="degreeSpanInside afterDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            Premiere Pro
-            <div className="degreeSpan">
-              <div className="degreeSpanInside premiereDegree"></div>
+            <div className="gifContent">
+              Premiere Pro
+              <div className="degreeSpan">
+                <div className="degreeSpanInside premiereDegree"></div>
+              </div>
             </div>
-          </div>
-          
-          <div className="gifContent">
-            Microsoft
-            <div className="degreeSpan">
-              <div className="degreeSpanInside microsoftDegree"></div>
+
+            <div className="gifContent">
+              Microsoft
+              <div className="degreeSpan">
+                <div className="degreeSpanInside microsoftDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            Web Tasarım
-            <div className="degreeSpan">
-              <div className="degreeSpanInside webDegree"></div>
+            <div className="gifContent">
+              Web Tasarım
+              <div className="degreeSpan">
+                <div className="degreeSpanInside webDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            Portfolio
-            <div className="degreeSpan">
-              <div className="degreeSpanInside portfolioDegree"></div>
+            <div className="gifContent">
+              Portfolio
+              <div className="degreeSpan">
+                <div className="degreeSpanInside portfolioDegree"></div>
+              </div>
             </div>
-          </div>
-          <div className="gifContent">
-            In Design
-            <div className="degreeSpan">
-              <div className="degreeSpanInside designDegree"></div>
+            <div className="gifContent">
+              In Design
+              <div className="degreeSpan">
+                <div className="degreeSpanInside designDegree"></div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
-        
       </div>
       <Parallax
         className="parallax2"

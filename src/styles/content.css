@@ -132,38 +132,38 @@
   width: 90%;
 }
 .illustratorDegree{
-  width: 90px;
+  width: 90%;
 }
 .afterDegree{
-  width: 90px;
+  width: 90%;
 }
 .premiereDegree{
-  width: 90px;
+  width: 90%;
 }
 .microsoftDegree{
-  width: 80px;
+  width: 80%;
 }
 .webDegree{
-  width: 60px;
+  width: 60%;
 }
 .portfolioDegree{
-  width: 90px;
+  width: 90%;
 }
 .designDegree{
-  width: 80px;
+  width: 80%;
 }
 .turkceDegree {
-  width: 90px;
+  width: 90%;
 }
 .ingilizceDegree {
-  width: 50px;
+  width: 50%;
 }
 .ruscaDegree {
-  width: 10px;
+  width: 20%;
 
 }
 .degreeSpanInside {
-  transform:translateX(-100%);
+  transform:translateX(-200%);
   height: 100%;
   border-radius: 1000px;
   background-color: rgb(255, 255, 255);
