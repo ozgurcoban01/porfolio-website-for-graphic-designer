@@ -11,6 +11,7 @@ import Home from "./components/Home.js";
 import Portfolio from "./components/Portfolio.js";
 import Navbar from "./components/Navbar.js";
 import Content from "./components/Content.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
