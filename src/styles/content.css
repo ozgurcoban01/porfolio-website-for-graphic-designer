@@ -14,7 +14,6 @@
   object-fit: fill;
   height: 100%;
   width: 100%;
-  
 }
 .videoText {
   display: flex;
@@ -63,7 +62,7 @@
 }
 .layer2 {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   padding: 2%;
   text-align: center;
@@ -85,30 +84,92 @@
 }
 .gif {
   cursor: pointer;
-  width: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-weight: 700;
   flex-direction: column;
+  width: 20%;
+  justify-content: center;
 }
-.gif svg {
-  fill: black;
-  height: 100px;
-  width: 100px;
-  transition: 0.3s;
+.gifSpan {
+  color: white;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10%;
+  background-color: rgb(109, 0, 0);
+  border-radius: 100px;
+  font-weight: 700;
 }
-.gif1:hover .svg1 {
-  fill: rgb(255, 145, 0);
-  stroke: black;
+.gifContent {
+  width: 100%;
+
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
 }
-.gif2:hover .svg2 {
-  stroke: black;
-  fill: rgb(161, 0, 167);
+.degreeSpan {
+  width: 50%;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: rgb(57, 0, 0);
+  border: 5px solid rgb(57, 0, 0);
+  overflow: hidden;
 }
-.gif3:hover .svg3 {
-  stroke: black;
-  fill: rgb(76, 0, 255);
+
+.degrees {
+  width: 200%;
+  columns: 2;
 }
+
+.dildegrees {
+  width: 100%;
+}
+
+.photoshopDegree{
+  width: 90%;
+}
+.illustratorDegree{
+  width: 90px;
+}
+.afterDegree{
+  width: 90px;
+}
+.premiereDegree{
+  width: 90px;
+}
+.microsoftDegree{
+  width: 80px;
+}
+.webDegree{
+  width: 60px;
+}
+.portfolioDegree{
+  width: 90px;
+}
+.designDegree{
+  width: 80px;
+}
+.turkceDegree {
+  width: 90px;
+}
+.ingilizceDegree {
+  width: 50px;
+}
+.ruscaDegree {
+  width: 10px;
+
+}
+.degreeSpanInside {
+  transform:translateX(-100%);
+  height: 100%;
+  border-radius: 1000px;
+  background-color: rgb(255, 255, 255);
+
+}
+
 
 @media screen and (max-width: 480px) {
   .contentDiv {
@@ -151,28 +212,11 @@
     flex-direction: column;
     padding: 5%;
   }
-}
-.gif1::selection  {
-  background: rgb(255, 145, 0);
- 
-}
-.gif2::selection {
-  background: rgb(161, 0, 167);
-}
-.gif3::selection {
- 
-  background: rgb(76, 0, 255);
-  
-}
-.gif1 h1::selection  {
-  background: rgb(255, 145, 0);
- 
-}
-.gif2 h1::selection {
-  background: rgb(161, 0, 167);
-}
-.gif3 h1::selection {
- 
-  background: rgb(76, 0, 255);
-  
+  .degrees {
+    width: 90vw;
+    columns: 1;
+  }
+  .dildegrees {
+    width: 90vw;
+  }
 }
