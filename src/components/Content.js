@@ -19,7 +19,7 @@ const Content = () => {
         toggleActions: "restart none none none",
       },
       x: 0,
-      duration:1.5,
+      duration: 1.5,
       ease: "ease-in-out",
     });
   }, []);
@@ -97,6 +97,7 @@ const Content = () => {
         <div className="gif gif2">
           <div className="gifSpan">Yetenekler</div>
           <div className="degrees">
+          <div className="innerDegrees">
             <div className="gifContent">
               Photoshop
               <div className="degreeSpan">
@@ -121,7 +122,8 @@ const Content = () => {
                 <div className="degreeSpanInside premiereDegree"></div>
               </div>
             </div>
-
+            </div>
+            <div className="innerDegrees">
             <div className="gifContent">
               Microsoft
               <div className="degreeSpan">
@@ -145,6 +147,7 @@ const Content = () => {
               <div className="degreeSpan">
                 <div className="degreeSpanInside designDegree"></div>
               </div>
+            </div>
             </div>
           </div>
         </div>
